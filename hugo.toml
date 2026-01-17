@@ -1,0 +1,75 @@
+baseURL = 'https://r00tski11.github.io/'
+title = "Joel Sam | Security Research"
+languageCode = 'en-us'
+theme = 'hugo-blog-awesome'
+
+# Enable emojis globally
+enableEmoji = true
+
+[services]
+  [services.googleAnalytics]
+    id = ''
+  [services.disqus]
+    shortname = ''
+
+# Syntax highlighting for code blocks
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    pageRef = "/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef = "posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    pageRef = "about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[params]
+  sitename = "Joel Sam"
+  defaultColor = "light"
+  description = "Security research, vulnerability hunting, and CTF writeups"
+  mainSections = ['posts']
+  toc = true
+  tocOpen = false
+  goToTop = true
+  dateFormat = "2 Jan 2006"
+  rssFeedDescription = "summary"
+
+[params.author]
+  avatar = "avatar.jpg"
+  intro = "Security Research & Vulnerability Hunting"
+  name = "Joel Sam"
+  description = "Application Security Engineer at Zoho. Hunting vulnerabilities in web, cloud, and iOS applications. Bug bounty researcher, CTF enthusiast, and security tooling builder."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/r00tski11"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/joel-sam"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:joelsam908@gmail.com"
+
+[[params.socialIcons]]
+  name = "Rss"
+  url = "/index.xml"
